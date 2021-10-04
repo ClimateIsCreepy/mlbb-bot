@@ -6,7 +6,7 @@ client = discord.Client()
 class Help(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
-            
+           
     @commands.command()
     async def help(self,ctx):
         helpembed = discord.Embed(title="Help Commands For Layla", description="Here is the list of commands!", color=0x00ff00)
