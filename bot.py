@@ -15,4 +15,4 @@ bot.load_extension(
     "cogs.SomeCommands"
 )
 
-bot.run("ODk0NDMzMjA3NTQ0NTgyMTU0.YVp71g.oGdAoh240UY9sWj6n0UE1jQwe3U")
+bot.run("ODk0NDMzMjA3NTQ0NTgyMTU0.YVp71g.fxFfhzMbd88vAMU8j8xhgXRoHl8")

@@ -18,4 +18,6 @@ Layla from mlbb discord bot!
 -Fun facts about MLBB heroes or something interesting
 
 -Informative guides about the heroes!
+
+-Contains interesting lore about your favorite heroes
 -->
