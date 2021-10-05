@@ -15,4 +15,4 @@ bot.load_extension(
     "cogs.SomeCommands"
 )
 
-bot.run("ODk0NDMzMjA3NTQ0NTgyMTU0.YVp71g.fxFfhzMbd88vAMU8j8xhgXRoHl8")
+bot.run("TOKEN")
