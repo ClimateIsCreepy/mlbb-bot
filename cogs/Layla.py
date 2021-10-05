@@ -18,8 +18,11 @@ class Layla(commands.Cog):
         await ctx.send(embed=helpembed)
     @commands.command()
     async def tags(self,ctx):
-        tagsembed=discord.Embed(title="List of tags",description='do "!help <tag> to learn more about a specific tag"', color=0x00ff00)
-        tagsembed.set_image(url="attachment://image.png")
+        tagsembed=discord.Embed(title="**List of tags**",description='``` do "!help <tag> to learn more about a specific tag" ```', color=0x00ff00)
+        tagsembed.set_thumbnail(url='https://cdn.discordapp.com/attachments/882550997422067798/894812318771326986/layla.jpg')
+        tagsembed.set_footer(text='**Need more help?**',icon_url='https://cdn.discordapp.com/attachments/882550997422067798/894812323657707580/layla2.png')
+        tagsembed.add_field(name='**Utility tags**',value='``` ban, kick, mute, clear, serverstats, ping, avatar```',inline=False)
         await ctx.send(embed=tagsembed)
+    
 def setup(bot: commands.Bot):
     bot.add_cog(Layla(bot))
