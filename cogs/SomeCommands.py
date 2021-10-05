@@ -22,4 +22,5 @@ class SomeCommands(commands.Cog):
     async def on_ready(self):
       print('Bot is ready!.')
 def setup(bot: commands.Bot):
+    bot.remove_command("help")
     bot.add_cog(SomeCommands(bot))
