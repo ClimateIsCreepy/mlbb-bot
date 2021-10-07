@@ -15,7 +15,14 @@ class Layla(commands.Cog):
         helpembed = discord.Embed(title="Help Commands For Layla", description="Here is the list of commands!", color=0x00ff00)
         helpembed.add_field(name="!help <tag>", value="Get specific information on a tag", inline=False)
         helpembed.add_field(name="!tags", value="Gets a list of tags", inline=False)
-        await ctx.send(embed=helpembed)
+        await ctx.send(embed=helpembed
+        if not input:
+          for tags in self.bot.walkcommands():
+            if not command.cog_name and not command.hidden:
+                              commands_desc += f'{command.name} - {command.help}\n'
+                              print("hmmdoesdiswork")
+          
+          await ctx.send()
     @commands.command()
     async def tags(self,ctx):
         tagsembed=discord.Embed(title="**List of tags**",description='``` do "!help <tag> to learn more about a specific tag" ```', color=0x00ff00)
