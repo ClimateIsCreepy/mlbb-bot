@@ -21,8 +21,7 @@ class Layla(commands.Cog):
             if not command.cog_name and not command.hidden:
                               commands_desc += f'{command.name} - {command.help}\n'
                               print("hmmdoesdiswork")
-          
-          await ctx.send()
+                              await ctx.send(commands_desc )
     @commands.command()
     async def tags(self,ctx):
         tagsembed=discord.Embed(title="**List of tags**",description='``` do "!help <tag> to learn more about a specific tag" ```', color=0x00ff00)
